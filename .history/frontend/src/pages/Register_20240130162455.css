@@ -1,0 +1,13 @@
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+button {
+  border-radius: 50%;
+  border: 1px solid black; /* 黑色边框 */
+  margin-top: 2rem;
+  color: black; /* 黑色文字 */
+  background-color: white; /* 白色背景 */
+}

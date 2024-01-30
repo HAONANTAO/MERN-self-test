@@ -1,0 +1,37 @@
+:root {
+}
+
+html {
+  font-size: 10px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  user-select: none;
+}
+
+@mixin keepCenter {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-self: center;
+}
+@mixin backColor {
+  background-color: white;
+  color: black;
+}
+.Home {
+  @include keepCenter();
+  font-size: 3rem;
+  @include backColor();
+}
+.Auth {
+  @include keepCenter();
+  font-size: 3rem;
+  @include backColor();
+}

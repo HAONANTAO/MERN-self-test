@@ -1,0 +1,30 @@
+:root {
+}
+
+html {
+  font-size: 10px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  user-select: none;
+}
+
+@mixin keepCenter {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-self: center;
+}
+.Home {
+  @include keepCenter();
+  font-size: 2rem;
+}
+.Auht {
+  @include keepCenter();
+}

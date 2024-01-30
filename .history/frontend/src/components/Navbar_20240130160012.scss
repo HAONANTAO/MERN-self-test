@@ -1,0 +1,46 @@
+// Navbar.scss
+
+html {
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  user-select: none;
+}
+
+// Use the `@mixin` directive to define mixins
+@mixin keepCenter {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin backColor {
+  background-color: white;
+  color: black;
+}
+
+.Navbar {
+  // Apply mixins using @include
+  @include keepCenter;
+  
+}
+
+.Home,
+.Auth {
+  // Apply mixins using @include
+  @include keepCenter;
+  font-size: 3rem;
+  @include backColor;
+  margin-top: 0;
+  gap: 2rem;
+  padding: 2rem;
+}

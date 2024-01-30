@@ -1,0 +1,12 @@
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+button {
+  border-radius: 50%;
+  border: solid 1px white;
+  margin-top: 2rem;
+  color: blue;
+}
